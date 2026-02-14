@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlayHauz • Booking</title>
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="PlayHauz Home">
+        <div class="glitch-wrap" aria-hidden="true">
+          <div class="glitch-layer one" style="background-image:url('assets/img/logo.png')"></div>
+          <div class="glitch-layer two" style="background-image:url('assets/img/logo.png')"></div>
+          <div class="glitch-scan"></div>
+          <img src="assets/img/logo.png" alt="PLAYHAUZ" />
+        </div>
+        <div>
+          <div class="brand-title">PlayHauz</div>
+          <small>Delhi • Private Experiences</small>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href='index.html' >Home</a>
+        <a href='services.html' >Services</a>
+        <a href='gallery.html' >Gallery</a>
+        <a href='booking.html' style='color:var(--text); border-color: rgba(49,198,255,.26); background: rgba(49,198,255,.08)'>Booking</a>
+        <a class="btn" href="booking.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  
+<main class="section" data-booking>
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="h2">Booking</h2>
+        <p class="sub">BingeTown style multi-step booking. Payment button is dummy (for now).</p>
+      </div>
+      <a class="btn secondary" href="services.html">Back to Services</a>
+    </div>
+
+    <div style="display:none" data-complete class="form">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:10px">
+        <div>
+          <div style="font-weight:900; font-size:18px">Booking Captured ✅</div>
+          <div style="color:var(--muted); margin-top:6px">This is a demo summary (no real payment yet).</div>
+        </div>
+        <a class="btn" href="#" onclick="location.reload();return false;">New Booking</a>
+      </div>
+      <hr class="sep"/>
+      <pre data-summary style="margin:0; white-space:pre-wrap; color:var(--text)"></pre>
+    </div>
+
+    
+<div class="booking-layout">
+  <div class="booking-left">
+    <div class="form" style="margin-top:14px">
+      <div class="steps">
+        <div class="step active" data-chip>1. City</div>
+        <div class="step" data-chip>2. Date & Time</div>
+        <div class="step" data-chip>3. Room</div>
+        <div class="step" data-chip>4. Add-ons</div>
+        <div class="step" data-chip>5. Details</div>
+        <div class="step" data-chip>6. Payment</div>
+      </div>
+
+      <section data-step data-step-image="assets/img/Full cinematic walkthrough style angle character.webp" data-step-cap="Choose your city and area.">
+        <div class="form-grid">
+          <div>
+            <label>City</label>
+            <select id="city" required>
+              <option value="">Select city</option>
+              <option>Delhi</option>
+            </select>
+          </div>
+          <div>
+            <label>Location Area (optional)</label>
+            <input id="area" placeholder="e.g., Laxmi Nagar" />
+          </div>
+        </div>
+      </section>
+
+      <section data-step style="display:none" data-step-image="assets/img/101.webp" data-step-cap="Pick a date & time slot.">
+        <div class="form-grid">
+          <div>
+            <label>Date</label>
+            <input id="date" type="date" required />
+          </div>
+          <div>
+            <label>Time</label>
+            <input id="time" type="time" required />
+          </div>
+        </div>
+      </section>
+
+      <section data-step style="display:none" data-step-image="assets/img/cinema room1.webp" data-step-cap="Select your room and duration.">
+        <div class="form-grid">
+          <div>
+            <label>Room Type</label>
+            <select id="room" required>
+              <option value="">Choose</option>
+              <option>Private Cinema Room</option>
+              <option>Gaming Zone</option>
+              <option>Premium Room</option>
+              <option>Celebration Room</option>
+            </select>
+          </div>
+          <div>
+            <label>Duration</label>
+            <select id="hours" required>
+              <option value="">Choose</option>
+              <option>30 Minutes</option>
+              <option>1 Hour</option>
+              <option>2 Hours</option>
+              <option>3 Hours</option>
+            </select>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px">
+          <div class="card" style="grid-column:span 1">
+            <img src="assets/img/cinema room1.webp" alt="Cinema">
+            <div class="pad"><h3 style="margin:0">Cinema</h3><p style="margin:6px 0 0">₹ 00</p></div>
+          </div>
+          <div class="card" style="grid-column:span 1">
+            <img src="assets/img/gaming zone.webp" alt="Gaming">
+            <div class="pad"><h3 style="margin:0">Gaming</h3><p style="margin:6px 0 0">₹ 00</p></div>
+          </div>
+          <div class="card" style="grid-column:span 1">
+            <img src="assets/img/room2 0101.webp" alt="Premium">
+            <div class="pad"><h3 style="margin:0">Premium</h3><p style="margin:6px 0 0">₹ 00</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section data-step style="display:none" data-step-image="assets/img/smoke floor.webp" data-step-cap="Add fog entry, decor, cake, food.">
+        <div class="form-grid">
+          <div>
+            <label>Add-ons</label>
+            <div style="display:grid; gap:10px">
+              <label style="text-transform:none; letter-spacing:0; font-size:14px; color:var(--text)">
+                <input type="checkbox" name="addons" value="Decorations" /> Decorations (₹ 00)
+              </label>
+              <label style="text-transform:none; letter-spacing:0; font-size:14px; color:var(--text)">
+                <input type="checkbox" name="addons" value="Cake" /> Cake (₹ 00)
+              </label>
+              <label style="text-transform:none; letter-spacing:0; font-size:14px; color:var(--text)">
+                <input type="checkbox" name="addons" value="Fog/Smoke Entry" /> Fog/Smoke Entry (₹ 00)
+              </label>
+              <label style="text-transform:none; letter-spacing:0; font-size:14px; color:var(--text)">
+                <input type="checkbox" name="addons" value="Food Order" /> Food Order (₹ 00)
+              </label>
+            </div>
+          </div>
+          <div>
+            <label>Preview</label>
+            <div class="card" style="grid-column: span 1">
+              <img src="assets/img/smoke floor.webp" alt="Fog preview">
+              <div class="pad">
+                <h3 style="margin:0">Fog Entry</h3>
+                <p style="margin:6px 0 0; color:var(--muted)">Looks amazing with neon lighting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-step style="display:none" data-step-image="assets/img/birthday cellebration.webp" data-step-cap="Enter your details & notes.">
+        <div class="form-grid">
+          <div>
+            <label>Your Name</label>
+            <input id="name" required placeholder="Full name" />
+          </div>
+          <div>
+            <label>Phone / WhatsApp</label>
+            <input id="phone" required placeholder="0000000000" />
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label>Special Note (optional)</label>
+          <textarea id="note" placeholder="Any instructions (decor, entry, timing...)"></textarea>
+        </div>
+      </section>
+
+      <section data-step style="display:none" data-step-image="assets/img/candel light 01.webp" data-step-cap="Payment is dummy for now.">
+        <div style="display:grid; gap:12px">
+          <div class="badge">Payment (Dummy)</div>
+          <p style="margin:0; color:var(--muted); line-height:1.7">
+            This is a demo button right now. Later we can connect Razorpay/Paytm/etc.
+          </p>
+          <a class="btn" href="#" onclick="alert('Payment coming soon.'); return false;">Pay Now (Dummy)</a>
+        </div>
+      </section>
+
+      <hr class="sep"/>
+      <div style="display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap">
+        <button class="btn secondary" type="button" data-back>Back</button>
+        <button class="btn" type="button" data-next>Next</button>
+        <button class="btn" type="button" data-done style="display:none">Finish</button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="booking-visual" aria-label="Booking preview">
+    <div class="booking-visual-glow"></div>
+    <img data-step-preview src="assets/img/smoke floor.webp" alt="Preview" />
+    <div class="booking-visual-caption" data-step-caption>Pick city, location and date to start.</div>
+  </aside>
+</div>
+</div>
+</main>
+
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="badge">PLAYHAUZ • Neon Private Rooms</div>
+        <p style="margin:12px 0 0; line-height:1.7">
+          Premium private cinema + gaming + celebration setups in Delhi.
+          Phone/WhatsApp: <b>0000000000</b> • Address: <b>Delhi</b>
+        </p>
+      </div>
+      <div>
+        <div style="font-weight:800; color:var(--text); margin-bottom:10px">Quick Links</div>
+        <div style="display:grid; gap:8px">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="booking.html">Booking</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:800; color:var(--text); margin-bottom:10px">Notes</div>
+        <div style="display:grid; gap:8px">
+          <span>Prices are placeholder: <b>00</b></span>
+          <span>Payment button is dummy (for now)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlayHauz • Home</title>
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="PlayHauz Home">
+        <div class="glitch-wrap" aria-hidden="true">
+          <div class="glitch-layer one" style="background-image:url('assets/img/logo.png')"></div>
+          <div class="glitch-layer two" style="background-image:url('assets/img/logo.png')"></div>
+          <div class="glitch-scan"></div>
+          <img src="assets/img/logo.png" alt="PLAYHAUZ" />
+        </div>
+        <div>
+          <div class="brand-title">PlayHauz</div>
+          <small>Delhi • Private Experiences</small>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href='index.html' style='color:var(--text); border-color: rgba(49,198,255,.26); background: rgba(49,198,255,.08)'>Home</a>
+        <a href='services.html' >Services</a>
+        <a href='gallery.html' >Gallery</a>
+        <a href='booking.html' >Booking</a>
+        <a class="btn" href="booking.html">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  
+
+<main class="hero hero-v2">
+  <div class="hero-bg" role="img" aria-label="Neon glitch background"></div>
+  <div class="hero-bg-image" role="img" aria-label="PlayHauz hero background"></div>
+
+  <div class="container hero-v2-inner">
+    <div class="hero-v2-top">
+      <div class="hero-title">
+        <div class="hero-logo-text">PLAYHAUZ</div>
+        <h1 class="hero-h1">India's Best Theatre Venue for Memorable Experience</h1>
+        <p class="hero-sub">Book Your Perfect Celebration: Birthdays, Anniversaries, Date Nights & More!</p>
+      </div>
+    </div>
+
+    <div class="hero-v2-grid">
+      <section class="hero-booking" aria-label="Quick booking">
+        <div class="booking-card">
+          <div class="field">
+            <div class="field-label">CITY</div>
+            <select id="city" required>
+              <option value="" selected>Select from 8 options</option>
+              <option>Delhi</option><option>Noida</option><option>Gurugram</option><option>Ghaziabad</option>
+              <option>Faridabad</option><option>Greater Noida</option><option>Dwarka</option><option>East Delhi</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <div class="field-label">LOCATION</div>
+            <select id="location" required>
+              <option value="" selected>Choose a location</option>
+              <option>Laxmi Nagar</option><option>Preet Vihar</option><option>Rajouri Garden</option><option>Rohini</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <div class="field-label">DATE</div>
+            <input id="date" type="date" required />
+          </div>
+
+          <a class="btn book-btn" href="booking.html">Book Now</a>
+
+          <div class="mini-stats">
+            <div class="mini-chip">✨ <b>153819</b> bookings completed</div>
+            <div class="mini-muted">99 people searching right now!</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-right" aria-label="Hero visuals">
+        <div class="hero-right-glow"></div>
+        <img class="hero-right-img" src="assets/img/smoke floor.webp" alt="Neon entry with smoke" />
+      </section>
+    </div>
+  </div>
+</main>
+
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="h2">Top Experiences</h2>
+        <p class="sub">Pick what you want — cinema, gaming, birthday, candle light, smoke entry. All with neon mood.</p>
+      </div>
+      <a class="btn secondary" href="services.html">See all</a>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <img src="assets/img/cinema room1.webp" alt="Cinema room" />
+        <div class="pad">
+          <h3>Private Cinema Room</h3>
+          <p>Big screen, cozy seating, premium ambience.</p>
+          <div class="price-row">
+            <span class="price">₹ 00</span>
+            <a class="btn secondary" href="booking.html">Book</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/gaming zone.webp" alt="Gaming Zone" />
+        <div class="pad">
+          <h3>Gaming Zone</h3>
+          <p>Console/PC vibe — book by time and chill.</p>
+          <div class="price-row">
+            <span class="price">₹ 00</span>
+            <a class="btn secondary" href="booking.html">Book</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/img/birthday cellebration.webp" alt="Birthday celebration" />
+        <div class="pad">
+          <h3>Birthday Celebration</h3>
+          <p>Decor + cake setup options. Add-ons available.</p>
+          <div class="price-row">
+            <span class="price">₹ 00</span>
+            <a class="btn secondary" href="booking.html">Book</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="h2">Gallery</h2>
+        <p class="sub">A quick look. Full gallery is inside.</p>
+      </div>
+      <a class="btn secondary" href="gallery.html">Open Gallery</a>
+    </div>
+    <div class="gallery">
+      <div class="g-item" data-lightbox="assets/img/101.webp"><img src="assets/img/101.webp" alt="Gallery 1"></div>
+      <div class="g-item" data-lightbox="assets/img/2222.webp"><img src="assets/img/2222.webp" alt="Gallery 2"></div>
+      <div class="g-item" data-lightbox="assets/img/121212.webp"><img src="assets/img/121212.webp" alt="Gallery 3"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox"><img alt="Preview"/></div>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="badge">PLAYHAUZ • Neon Private Rooms</div>
+        <p style="margin:12px 0 0; line-height:1.7">
+          Premium private cinema + gaming + celebration setups in Delhi.
+          Phone/WhatsApp: <b>0000000000</b> • Address: <b>Delhi</b>
+        </p>
+      </div>
+      <div>
+        <div style="font-weight:800; color:var(--text); margin-bottom:10px">Quick Links</div>
+        <div style="display:grid; gap:8px">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="booking.html">Booking</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:800; color:var(--text); margin-bottom:10px">Notes</div>
+        <div style="display:grid; gap:8px">
+          <span>Prices are placeholder: <b>00</b></span>
+          <span>Payment button is dummy (for now)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
